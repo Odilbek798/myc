@@ -1,0 +1,295 @@
+// .anal {
+//    width: 100%;
+//    max-width: 750px;
+//    margin: 0 auto;
+
+
+// }
+
+
+// .playful_btn {
+//    position: relative;
+//   display: inline-block;
+// //   padding: 15px 25px;
+// padding: 5px 10px;
+// //   font-size: 16px;
+// font: 500 40.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+//   font-weight: bold;
+//   color: black;
+//   background-color: white;
+//   border: 2px solid black;
+//   border-radius: 10px;
+//   box-shadow: 0 14px 0px black; 
+//   cursor: pointer;
+//   transition: transform 0.2s, box-shadow 0.2s; 
+// }
+
+// .playful_btn:hover {
+//    transform: translateY(2px); 
+//  }
+ 
+//  .playful_btn:active {
+//    transform: translateY(6px); 
+//    box-shadow: none; 
+//  }
+
+//  .text {
+//     p {
+//       font: 500 40.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// text-transform: uppercase;
+// text-align: center;
+
+//     }
+//  }
+
+//  .wrapper {
+//    display: flex;
+//    flex-direction: column;
+
+//    padding-top: 120px;
+//  }
+
+//  .brand {
+//    padding: 5px;
+//    border: 1px solid black;
+//    border-radius: 50%;
+//  }
+
+//  .img {
+//    width: 50px;
+//    height: 80px;
+//    padding-top: 40px;
+//  }
+
+// .studio {
+//    color: transparent; 
+//   -webkit-text-stroke: 1px black; 
+//   text-decoration: underline;
+// }
+// .second {
+//    margin-top: 20px;
+// }
+// .world {
+
+//    .orbit {
+//       position: absolute;
+//       width: 100px;
+
+//       @media (max-width:900px) {
+//         display: none;
+//       }
+      
+//    }
+// }
+
+// .gameObject {
+//   width: 100px;
+//   height: 100px;
+// }
+// /* Это для применения кастомного курсора в CSS */
+// .gameArea {
+//   cursor: url('/cursor.svg'), auto;
+// }
+
+
+
+.container {
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+}
+
+.anal {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.playful_btn {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  font: 500 40.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 14px 0px black;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.playful_btn:hover {
+  transform: translateY(2px);
+}
+
+.playful_btn:active {
+  transform: translateY(6px);
+  box-shadow: none;
+}
+
+.text {
+  p {
+    font: 500 40.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.brand {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.img {
+  width: 50px;
+  height: 80px;
+  padding-top: 40px;
+}
+
+.studio {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  text-decoration: underline;
+}
+
+.second {
+  margin-top: 20px;
+}
+
+.world {
+  .orbit {
+    position: absolute;
+    width: 100px;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+
+.gameLayer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  pointer-events: none; 
+  z-index: 2;
+}
+
+.gameObject {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  pointer-events: all; 
+  cursor: pointer;
+}
+
+.scoreBoard {
+display: flex;
+// z-index: 10;
+justify-content: center;
+align-items: center;
+gap: 20px;
+background-color: #fff;
+position: absolute;
+margin-bottom: 150px;
+width: 100%;
+height: 100px;
+
+
+p {
+  font: 500 20.297px / 44.3267px MetroSans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.highScore {
+  animation: best 6s infinite alternate;
+}
+
+}
+@keyframes best {
+  0% {
+  background-color: green;
+  }
+  10% {
+    background-color: red;
+    }
+  20% {
+   background-color: blue;
+   }
+   40% {
+     background-color: yellow;
+     }    
+  50% {
+    background-color: pink;
+    }        
+  60% {
+    background-color: red;
+  }
+  80% {
+    background-color: purple;
+    }
+    100% {
+      background-color: peru;
+      }
+}
+.gameArea {
+  cursor: url('/cursor.svg'), auto;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  h2{
+    font-size: 42px;
+    font-weight: 500;
+  }
+  a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+}
+.cards{
+  display: flex;
+  gap: 40px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  min-width: 550px;
+  img{
+    width: 100%;
+    border-radius: 20px;
+    
+    
+   aspect-ratio: 1/ 0.9;
+      transition: 0.5s;
+    &:hover{
+        width:580px;
+    }
+    }
+  
+  h3{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 450;
+  }
+}
